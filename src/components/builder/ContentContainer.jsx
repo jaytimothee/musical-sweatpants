@@ -21,8 +21,12 @@ const ContentContainer = () => {
 
   function handleClothingSize(clothingSize) {
     setClotheSize(clothingSize);
-    const activeSize = sizes.find(({ size }) => size === clothingSize);
-    console.log(activeSize);
+    sizes.forEach((sizeSelection) => {
+      if (sizeSelection.size === clothingSize) {
+        sizeSelection.isActive = true;
+      }
+    });
+    console.log(sizes);
   }
 
   return (
