@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 900;
+  font-display: 'swap';
+
+  src: url('./sf-pro/sf-pro-text_heavy.woff2') format('woff2'),
+}
+@font-face {
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 300;
+  font-display: 'swap';
+
+  src: url('./sf-pro/sf-pro-text_light.woff2') format('woff2'),
+}
+

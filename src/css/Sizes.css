@@ -1,0 +1,18 @@
+.button-margin {
+  margin-top: 25px;
+  color: #00edd9;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  justify-content: center;
+  align-content: center;
+  height: 65px;
+  width: 65px;
+  margin: 0.5rem;
+  border-radius: 50%;
+  box-shadow: 0 12px 25px 0 #99a3a921, 0 4px 12px 0 #9aa4a91e;
+}

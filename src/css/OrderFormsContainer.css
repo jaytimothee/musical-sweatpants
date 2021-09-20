@@ -1,0 +1,11 @@
+.forms-container {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.forms-wrapper {
+  min-width: 80%
+}
+

@@ -1,0 +1,71 @@
+#cart-badge {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  color:#00edd9;
+  z-index: 2;
+  height: 66px;
+  width: 66px;
+  position:absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 50%;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+  background-image: url('../assets/bag.svg');
+  background-repeat:  no-repeat;
+  background-size: 30px 30px ;
+  background-position-x: center;
+  background-position-y: 14px;
+
+}
+
+#cart-quick-view{
+  border-radius: 65px;
+  background-color: #fafafa;
+  width: 332px;
+  min-height: 172px;
+  padding: 35px 54px;
+  position:absolute;
+  right: 20px;
+  top: 53px;
+  z-index: 1;
+}
+
+#cart-quick-view .line-items{
+  min-height:90px;
+  max-height:150px;
+  overflow-y: auto;
+}
+
+#cart-quick-view .line-items::-webkit-scrollbar{
+  width: 0px;
+}
+
+#cart-quick-view .line-items .line-item-container{
+  border-top:1px solid #e6e8e9;
+  padding:8px 0;
+}
+
+.box-shadow{
+  box-shadow: 0 12px 25px 0 rgba(153, 163, 169, 0.13), 0 4px 12px 0 rgba(154, 164, 169, 0.12);
+}
+
+.your-cart {
+  font-size: 17px;
+  font-stretch: expanded;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.16px;
+  margin: 0 0 10px 0;
+}
+
+.subtotal {
+  flex: 1;
+  text-align: right;
+}

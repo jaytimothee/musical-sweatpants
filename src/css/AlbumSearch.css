@@ -1,0 +1,90 @@
+.input-container {
+  background-color: #fafafa;
+  height:48px;
+  display: flex;
+  align-items: center;
+  border-radius: 35px;
+  box-shadow: 0 12px 25px 0 #99a3a921, 0 4px 12px 0 #9aa4a91e;
+  padding:9px 17px;
+
+}
+
+.input {
+  height:48px;
+  width:100%;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  font-family: 'SF Pro Display';
+  font-weight: 300;
+  background-color: #fafafa;
+}
+
+.input:focus{
+  outline:#00edd9;
+}
+
+.album-artwork {
+  border-radius: 5px;
+}
+
+.results-container {
+  position: absolute;
+  top:0;
+  background-color: white;
+  width: calc(100% - 40px);
+  flex-direction: column;
+  border-radius: 35px;
+  box-shadow: 0 12px 25px 0 #99a3a921, 0 4px 12px 0 #9aa4a91e ;
+  max-height: 310px;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding: 20px 20px;
+  display:grid;
+  grid-template-columns: auto;
+  row-gap: 10px;
+
+}
+
+.results-container .results-wrapper:last-child{
+  padding-bottom: 20px;
+
+}
+
+.results-container::-webkit-scrollbar{
+  width: 0px;
+}
+
+.results-wrapper {
+  cursor:pointer;
+}
+
+.chosen-input {
+  margin-left: 10px;
+  align-items: center;
+}
+
+.input-album-name {
+  font-size: 18px;
+}
+
+.input-artist-name {
+  font-size: 12px;
+}
+
+.text-overflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 225px;
+}
+
+.fa {
+  color: #33333380;
+  margin-right: 12px;
+}
+
+.fa-close {
+  cursor: pointer;
+}
+

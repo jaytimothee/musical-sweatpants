@@ -1,0 +1,37 @@
+.content-container {
+  height: 100%;
+  width: 50%;
+  max-width: 750px;
+  display: flex;
+  align-items: center;
+}
+
+.content-title {
+  font-size: 30px;
+}
+
+.content-description {
+  font-size: 18px;
+}
+
+.content-padding {
+  padding: 50px;
+}
+
+.feature-title {
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.content-margin {
+  margin-bottom: 50px;
+  display: flex;
+}
+
+.content-builder-wrapper {
+  width: 375px;
+}
+
+.add-to-cart {
+  padding: 22px 0;
+}

@@ -1,0 +1,32 @@
+.order-details-container {
+  background: linear-gradient(to bottom, #f3f3f3, #e6e6e6);
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.order-details-wrapper {
+  align-self: center;
+  width: 65%;
+}
+
+.line-item-padding {
+  padding: 0px 24px 24px 24px;
+}
+
+.divider {
+  margin: 24px;
+}
+
+.order-details {
+  width: 85%;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.order-details-item{
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0px 15px 15px;
+}
