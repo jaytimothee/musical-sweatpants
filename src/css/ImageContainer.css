@@ -16,4 +16,13 @@
   width: 90%;
   display: flex;
 }
+.flex-image2 {
+  height: auto;
+  width: 5%;
+  display: flex;
+  position: absolute;
+  top: 35%;
+  left: 34%;
+  z-index: 2;
+}
 
