@@ -3,10 +3,12 @@
   color: #00edd9;
   text-align: center;
 }
+.sizes{
+  display: flex;
+}
 
 .button-container {
   display: flex;
-  flex-direction: row;
   cursor: pointer;
   justify-content: center;
   align-content: center;

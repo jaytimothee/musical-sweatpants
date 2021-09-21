@@ -10,24 +10,23 @@ const ContentContainer = () => {
   const { currentAlbum } = useCurrentAlbumContext();
   const { addToCart } = useCartContext();
 
+  const price ={
+    'XS': 60,
+    "S": 80,
+    "M": 100,
+    "L": 120,
+    "XL": 140
+  };
+  const type = 'Sweatpants'
+
   const disabledButton = !currentAlbum || !clotheSize ? true : false;
 
-  const sizes = [
-    { size: "XS", isActive: false },
-    { size: "M", isActive: false },
-    { size: "L", isActive: false },
-    { size: "XL", isActive: false },
-  ];
+
 
   function handleClothingSize(clothingSize) {
     setClotheSize(clothingSize);
-    sizes.forEach((sizeSelection) => {
-      if (sizeSelection.size === clothingSize) {
-        sizeSelection.isActive = true;
-      }
-    });
-    console.log(sizes);
   }
+
 
   return (
     <div className="content-container">
@@ -45,22 +44,17 @@ const ContentContainer = () => {
           <div className="content-margin">
             <h3 className="feature-title light-text">Size</h3>
 
-            {sizes.map((size) => (
-              <Sizes
-                key={size.size}
-                sizesOption={size}
-                isActive={size.isActive}
-                selectSize={handleClothingSize}
-              />
-            ))}
+            <Sizes
+              selectSize={handleClothingSize}
+            />
           </div>
 
           <button
             disabled={disabledButton}
             className={"btn heavy-text full-width add-to-cart"}
-            onClick={() => addToCart(currentAlbum, "XS", 60, "Sweatpants")}
+            onClick={() => addToCart(currentAlbum, clotheSize, price[clotheSize], type)}
           >
-            <span>Add to Cart - $60</span>
+            <span>Add to Cart - {price[clotheSize]}</span>
           </button>
         </div>
       </div>
