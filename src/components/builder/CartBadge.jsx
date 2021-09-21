@@ -52,7 +52,7 @@ const CartItemRemoval = (cartItemIndex) => {
 };
 
 const CartQuickView = () => {
-  const { cart, subtotal } = useCartContext();
+  const { cart, subtotal, setPriviewItem } = useCartContext();
   const history = useHistory();
 
   return (
@@ -65,6 +65,7 @@ const CartQuickView = () => {
           <div key={index} className={"flex"}>
             <CartItemRemoval cartItemIndex={index} />
             <LineItem
+              handlePriviewItem={setPriviewItem}
               album={item.album}
               price={item.price}
               size={item.size}

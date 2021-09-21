@@ -1,9 +1,9 @@
 import React from "react";
 
-const LineItem = ({ album, price, size, type }) => {
+const LineItem = ({ album, price, size, type, handlePriviewItem }) => {
 
   return (
-    <div className="line-item-container full-width">
+    <div onClick={() => handlePriviewItem(album)} className="line-item-container full-width">
       <div className="flex vertical-flex">
         <img
           alt="album-artwork"

@@ -9,7 +9,8 @@ export const CartProvider = ({ children, ...initOptions }) => {
 
   const [cart, setCart] = useState([]);
   const [subtotal, setSubtotal] = useState(0);
-  const [total, setTotal] = useState(0)
+  const [total, setTotal] = useState(0);
+  const [viewItem, setViewItem] = useState(null)
   const SHIPPING = 5
   const TAXES = .1
   const addToCart = (album, size, price, type) => {
@@ -22,6 +23,10 @@ export const CartProvider = ({ children, ...initOptions }) => {
     };
     setCart(oldCart => [...oldCart, newItem]);
   };
+
+  const setPriviewItem = (item) => {
+    setViewItem(item)
+  }
 
 
   useEffect(() => {
@@ -40,6 +45,8 @@ export const CartProvider = ({ children, ...initOptions }) => {
     <CartContext.Provider
       value={{
         addToCart,
+        setPriviewItem,
+        viewItem,
         cart,
         setCart,
         subtotal,
