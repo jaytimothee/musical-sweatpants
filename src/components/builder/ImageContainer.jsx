@@ -10,7 +10,10 @@ if(viewItem){
     <div className="image-container">
       <div className="image-wrapper">
         <img className="flex-image" src={sweatpants} alt="sweatpants" />
+        <div className="album-container">
         <img className="flex-image2" src={viewItem.artworkUrl60} />
+        <span className="artist">{viewItem.artistName}</span>
+        </div>
       </div>
     </div >
   );}

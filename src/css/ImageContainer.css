@@ -10,6 +10,16 @@
   justify-content: space-around;
   align-items: center;
 }
+.album-container {
+  display: flex;
+  flex-direction: column;
+}
+.artist{
+position: relative;
+right: 130px;
+top: -25px;
+color: #fff;
+}
 
 .flex-image {
   height: auto;
@@ -22,7 +32,7 @@
   display: flex;
   position: absolute;
   top: 35%;
-  left: 33.5%;
+  left: 31%;
   z-index: 2;
 }
 
