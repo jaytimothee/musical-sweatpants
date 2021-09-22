@@ -1,7 +1,6 @@
 import React from "react"
 
 const FormInput = ({ formData, inputData, setInputData, placeholder }) => {
-
   return (
     <div className={"flex margin-buffer"}>
       {inputData.map((data, index) => {
@@ -11,7 +10,8 @@ const FormInput = ({ formData, inputData, setInputData, placeholder }) => {
             className="input-container full-width margin-buffer">
             <input
               className="input"
-              onChange={(event) => console.log('event', event, 'index', index)}
+              placeholder={placeholder[index]}
+              onChange={(event) => formData[index] = event.target.value}
             />
           </div>
         )
