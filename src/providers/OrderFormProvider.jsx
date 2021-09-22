@@ -1,4 +1,4 @@
-import React, { useContext, createContext, useState, useEffect } from 'react';
+import React, { useContext, createContext, useState } from 'react';
 import { addressData } from '../helpers/data';
 import { paymentFormData } from '../helpers/data';
 
@@ -11,9 +11,6 @@ export const OrderFormProvider = ({ children }) => {
   const [billingData, setBillingData] = useState(addressData);
   const [paymentData, setPaymentData] = useState(paymentFormData);
 
-  useEffect(() => {
-    console.log(shippingData)
-  }, [shippingData])
 
   return (
     <OrderFormContext.Provider
@@ -32,4 +29,4 @@ export const OrderFormProvider = ({ children }) => {
   );
 };
 
-export default OrderFormProvider;
+export default OrderFormProvider; 

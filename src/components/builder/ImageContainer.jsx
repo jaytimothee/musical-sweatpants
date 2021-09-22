@@ -11,7 +11,7 @@ if(viewItem){
       <div className="image-wrapper">
         <img className="flex-image" src={sweatpants} alt="sweatpants" />
         <div className="album-container">
-        <img className="flex-image2" src={viewItem.artworkUrl60} />
+        <img className="flex-image2" src={viewItem.artworkUrl60} alt="album-cover"/>
         <span className="artist">{viewItem.artistName}</span>
         </div>
       </div>
